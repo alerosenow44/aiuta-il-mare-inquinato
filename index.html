@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salviamo il Mare - Proteggi le Tartarughe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Salviamo il Mare</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#problem">Problema</a></li>
+      <li><a href="#mission">Missione</a></li>
+      <li><a href="#petition">Firma</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Proteggi il Mare, Salva le Tartarughe!</h1>
+      <p>Unisciti alla nostra petizione contro l'inquinamento marino.</p>
+      <a href="#petition" class="cta-button">FIRMA ORA</a>
+    </div>
+  </section>
+
+  <!-- Sezione Problema -->
+  <section id="problem" class="problem">
+    <h2>L'Oceano Sta Morendo</h2>
+    <div class="stats">
+      <div class="stat-card">
+        <i class="fas fa-trash"></i>
+        <h3>8 milioni</h3>
+        <p>di tonnellate di plastica finiscono in mare ogni anno.</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-turtle"></i>
+        <h3>50%</h3>
+        <p>delle tartarughe marine ingerisce plastica.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Missione -->
+  <section id="mission" class="mission">
+    <h2>Cosa Facciamo</h2>
+    <div class="mission-cards">
+      <div class="card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Pulizia Spiagge</h3>
+        <p>Organizziamo eventi per rimuovere la plastica dalle coste.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Protezione Tartarughe</h3>
+        <p>Sosteniamo centri di recupero per tartarughe ferite.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Sensibilizzazione</h3>
+        <p>Educhiamo le scuole e le comunità locali.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Raccolta Firma -->
+  <section id="petition" class="petition">
+    <h2>Firma la Petizione!</h2>
+    <p>Aiutaci a raggiungere <strong>10.000 firme</strong> per chiedere leggi più severe contro l'inquinamento.</p>
+    <div class="petition-form">
+      <input type="text" id="name" placeholder="Nome e Cognome" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="city" placeholder="Città">
+      <button onclick="addSignature()">FIRMA ORA</button>
+    </div>
+    <div class="counter">
+      <h3>Firme raccolte: <span id="signature-count">0</span></h3>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 Salviamo il Mare | Tutti i diritti riservati</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
